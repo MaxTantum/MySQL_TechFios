@@ -1,0 +1,121 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4027483900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the TechFios Login Page",
+            "match": {
+              "location": "StepDef.userIsOnTheTechFiosLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7026443400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.beforeRun()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User should be able to Login with valid credentials",
+        "description": "",
+        "id": "validate-techfios-login-page-functionality;user-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 646428200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 258252300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter \"demo@techfios.com\" and  \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 12
+                },
+                {
+                  "val": "abc123",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDef.user_enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1527191900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click on Login button",
+            "match": {
+              "location": "StepDef.user_click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9664400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should be able to land on DashBoard Page",
+            "match": {
+              "location": "StepDef.user_should_be_able_to_land_on_DashBoard_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Scenario2"
+          }
+        ]
+      }
+    ],
+    "name": "Validate TechFios Login Page Functionality",
+    "description": "",
+    "id": "validate-techfios-login-page-functionality",
+    "keyword": "Feature",
+    "uri": "feature/TechFios_Login.feature"
+  }
+]
